@@ -19,6 +19,8 @@ import org.springframework.security.config.annotation.web.configurers.DefaultLog
 @EnableWebSecurity
 
 
+
+//Idk why regex dont work
 public class WebSecurityConfig extends WebMvcAutoConfiguration {
     @Autowired
     private UserService userService;
