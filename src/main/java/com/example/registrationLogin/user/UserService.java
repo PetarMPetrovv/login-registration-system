@@ -1,5 +1,6 @@
 package com.example.registrationLogin.user;
 
+import com.example.registrationLogin.registration.Controller.UserRegistrationDto;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -39,5 +40,10 @@ public class UserService implements UserDetailsService {
         //TODO send confirmation token
 
         return "it works";
+    }
+
+        //TODO not sure if I need to import it ..
+    public void save(UserRegistrationDto registrationDto) {
+
     }
 }
