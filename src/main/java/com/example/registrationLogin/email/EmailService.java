@@ -1,10 +1,20 @@
 package com.example.registrationLogin.email;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.scheduling.annotation.Async;
+
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
+
 public class EmailService {
     private final static Logger LOGGER = LoggerFactory
             .getLogger(EmailService.class);
 
-    private final JavaMailSender mailSender;
+    //may be need to be private
+    private JavaMailSender mailSender;
 
     @Override
     @Async
