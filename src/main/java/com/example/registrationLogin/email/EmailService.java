@@ -16,7 +16,6 @@ public class EmailService {
     //may be need to be private
     private JavaMailSender mailSender;
 
-    @Override
     @Async
     public void send(String to, String email) {
         try {
